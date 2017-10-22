@@ -1,0 +1,17 @@
+***************
+*** 382,388 ****
+  		int stage = pmg.getStage();
+  		cf.setNextPacManMove(DOWN);
+  		makeStep(pmg);
+- 		assertEquals("Expected nex stage afet all pac dots are eaten",
+  				stage + 1, pmg.getStage());
+  		assertNull("Expect no extra item on board", pmg.getExtraItemPosition());
+  
+--- 358,364 ----
+  		int stage = pmg.getStage();
+  		cf.setNextPacManMove(DOWN);
+  		makeStep(pmg);
++ 		assertEquals("Expected next stage afet all pac dots are eaten",
+  				stage + 1, pmg.getStage());
+  		assertNull("Expect no extra item on board", pmg.getExtraItemPosition());
+  
